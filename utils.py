@@ -15,5 +15,9 @@ def generate_output(results):
 URLtoSiteNameMapper = {"https://takehome.io/twitter":"twitter","https://takehome.io/facebook":"facebook","https://takehome.io/instagram":"instagram"}
 
 URLs = ["https://takehome.io/twitter","https://takehome.io/facebook","https://takehome.io/instagram"]
+
+RETRIES = 3
+
+DELAYS = 1
             
 
