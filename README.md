@@ -32,3 +32,7 @@ flask --debug run
 ```
 
 The submission should just be a link to your cloned repo.
+
+#### My additions
+To run unit test = python3 utils_test.py
+Also the project has a retry functionality, you can set the number of retries in the utils.py file.
