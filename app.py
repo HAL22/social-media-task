@@ -37,10 +37,9 @@ async def fetch_all(urls):
         tasks = [fetch(session,url,utils.URLtoSiteNameMapper[url]) for url in urls]
         return await asyncio.gather(*tasks)
 
-@app.route("/",methods=['POST'])
+@app.route("/",methods=['GET'])
 async def social_network_activity():
     results = await fetch_all(utils.URLs)
-    print(results)
     json_response,erorrs = utils.generate_output(results)
     if len(erorrs)>0:
         output = {"Partial response":json_response,"Errors":erorrs}
